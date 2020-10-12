@@ -2,14 +2,9 @@
 An implementation of a real-time operating system.
 
 ## How to build
-```shell
-mkdir build && cd build
-cmake .. # "-UBUILD_TESTS -DBUILD_TESTS=ON" to build tests
-make
-```
+In order to build the project, you have to have Rust toolchain installed on the system. The following commands will produce a bare binary targeted at x86-64 platform.
 
-## How to build documentation
 ```shell
-doxygen
+rustup target add thumbv7em-none-eabihf
+cargo build --target thumbv7em-none-eabihf
 ```
-Documentation will be generated in the directory named `docs`.
