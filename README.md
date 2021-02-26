@@ -5,6 +5,8 @@ An implementation of a real-time operating system.
 In order to build the project, you have to have Rust toolchain installed on the system. The following commands will produce a bare binary targeted at x86-64 platform.
 
 ```shell
+sudo apt-get update
+sudo apt-get install qemu qemu-system qemu-kvm
 cargo install bootimage
 rustup component add rust-src
 rustup component add llvm-tools-preview
